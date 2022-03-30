@@ -1,0 +1,13 @@
+﻿@model NdihmesTagLaborator.Models.Evente
+
+<div>
+ <h1>Faleminderit, @Model.Emri!</h1>
+ @if (Model.Konfirmim == true) {
+ <p>Na vjen mirë që do të merrni pjese ne Konference</p>
+ <img src="~/images/firework.png"/>
+ } else {
+ <p>Na vjen keq qe nuk mund te merrni pjese ne Konference</p>
+ <img src="~/images/sad.png" />
+ }
+ <a asp-action="AfishoListe">Shikoni listen e pjesemarresve</a>
+ </div>

@@ -1,0 +1,42 @@
+﻿@model NdihmesTagLaborator.Models.Evente
+<html>
+    <h4>Forma e regjistrimit në Event</h4>
+    <body>
+        <form asp-action="FormaKonference" method="post" >
+            <div>
+                <label asp-for="Emri">Emri juaj:</label>
+                <input asp-for="Emri" class="form-control" />
+                <span asp-validation-for="Emri"></span>
+            </div>
+           <div>
+
+            <label asp-for="Email">Email juaj:</label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email"></span>
+           </div>
+            <div>
+             <label asp-for="Tel">Numri i Tel:</label>
+            <input asp-for="Tel" class="form-control" />
+            <span asp-validation-for="Tel"></span>
+
+            </div>
+           <div>
+                <label asp-for="Konfirmim">Konfirmo:</label>
+            <select asp-for="Konfirmim" class="form-control">
+                <option value="">--Përzgjidhni një vlerë--</option>
+                <option value="true">Po</option>
+                <option value="false">Jo</option>
+            </select>
+            <span asp-validation-for="Konfirmim"></span>
+
+           </div>
+           
+           <br />
+            <input type="submit" value="Regjstrohu" class="btn btn-primary"/>
+
+        </form>
+
+    </body>
+
+
+</html>
